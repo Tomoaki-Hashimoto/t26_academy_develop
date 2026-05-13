@@ -46,7 +46,7 @@ public class BookController {
     @GetMapping("/book/add") // 登録画面を表示する
     public String add(Model model) {
         if (!model.containsAttribute("bookMstDto")) {// もし情報がなかったら
-            model.addAttribute("bookMstDto", new BookMstDto());// 空のフォームを作って画面に渡している
+            model.addAttribute("bookMstDto", new BookMstDto());// 空のフォームを作成し画面に渡している
         }
         return "book/add";// add.htmlを表示
     }
