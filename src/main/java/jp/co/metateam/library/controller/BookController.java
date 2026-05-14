@@ -56,6 +56,6 @@ public class BookController {
 
         this.bookMstService.save(bookMstDto);// DBに保存する処理をお願いしている
 
-        return "redirect:/book/index";// 一覧画面に戻る
+        return "redirect:/book/index";// 一覧画面へ戻る
     }
 }

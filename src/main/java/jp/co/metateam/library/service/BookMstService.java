@@ -51,6 +51,6 @@ public class BookMstService {
         book.setTitle(dto.getTitle());
         // 編集できない箱にデータを変換
         // dtoからデータを取得し、BOOKという新しい箱に変換する
-        this.bookMstRepository.save(book);// bookに変換されたものをリポジトリーに保存する（自分のもの）
+        this.bookMstRepository.save(book);// bookに変換されたものをリポジトリーへ保存する（自分のもの）
     }
 }
